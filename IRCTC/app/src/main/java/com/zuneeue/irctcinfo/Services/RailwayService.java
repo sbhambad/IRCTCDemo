@@ -1,6 +1,14 @@
 package com.zuneeue.irctcinfo.Services;
 
+import com.zuneeue.irctcinfo.models.arrivals.ArrivalsData;
+import com.zuneeue.irctcinfo.models.availability.SeatAvailabilityData;
+import com.zuneeue.irctcinfo.models.cancelled.CancelledData;
+import com.zuneeue.irctcinfo.models.fare.FareData;
 import com.zuneeue.irctcinfo.models.pnr.PnrData;
+import com.zuneeue.irctcinfo.models.routes.RouteData;
+import com.zuneeue.irctcinfo.models.searchtrains.SearchTrainsData;
+import com.zuneeue.irctcinfo.models.trainsdetails.TrainsDetailsData;
+import com.zuneeue.irctcinfo.models.trainstatus.LiveStatusData;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
