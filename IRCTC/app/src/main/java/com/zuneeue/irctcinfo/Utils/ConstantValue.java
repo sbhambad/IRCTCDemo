@@ -5,5 +5,5 @@ package com.zuneeue.irctcinfo.Utils;
  */
 public class ConstantValue {
 
-    public static String API_KEY = "grmjw8449";
+    public static String API_KEY = "";
 }
