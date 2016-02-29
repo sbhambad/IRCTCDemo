@@ -2,8 +2,16 @@ package com.zuneeue.irctcinfo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.zuneeue.irctcinfo.Models.PnrData;
+import com.zuneeue.irctcinfo.Utils.ConstantValue;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getPnrFunc("8144989908");
     }
 
     @Override
@@ -33,5 +43,28 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void getPnrFunc(String pnrNo) {
+
+        Call<PnrData> pnrData = AppController.railwayService.getPnr(pnrNo, ConstantValue.API_KEY);
+        pnrData.enqueue(new Callback<PnrData>() {
+            @Override
+            public void onResponse(Call<PnrData> call, Response<PnrData> response) {
+
+                Log.e("getTrainName", response.body().getTrainName());
+                Log.e("getTrainNum", response.body().getTrainNum());
+                Log.e("getTotalPassengers", response.body().getTotalPassengers()+"");
+                Log.e("getFromStation", response.body().getFromStation().getName());
+                Log.e("getFromStation", response.body().getToStation().getName());
+
+
+            }
+
+            @Override
+            public void onFailure(Call<PnrData> call, Throwable t) {
+
+            }
+        });
     }
 }
