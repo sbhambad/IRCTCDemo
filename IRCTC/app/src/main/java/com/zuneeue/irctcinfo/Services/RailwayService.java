@@ -1,6 +1,6 @@
 package com.zuneeue.irctcinfo.Services;
 
-import com.zuneeue.irctcinfo.Models.PnrData;
+import com.zuneeue.irctcinfo.models.pnr.PnrData;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

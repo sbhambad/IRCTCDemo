@@ -1,15 +1,14 @@
 
-package com.zuneeue.irctcinfo.Models;
+package com.zuneeue.irctcinfo.models.fare;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+public class Train {
 
-public class FromStation {
-
-    @SerializedName("code")
+    @SerializedName("number")
     @Expose
-    private String code;
+    private String number;
     @SerializedName("name")
     @Expose
     private String name;
@@ -17,19 +16,19 @@ public class FromStation {
     /**
      * 
      * @return
-     *     The code
+     *     The number
      */
-    public String getCode() {
-        return code;
+    public String getNumber() {
+        return number;
     }
 
     /**
      * 
-     * @param code
-     *     The code
+     * @param number
+     *     The number
      */
-    public void setCode(String code) {
-        this.code = code;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     /**

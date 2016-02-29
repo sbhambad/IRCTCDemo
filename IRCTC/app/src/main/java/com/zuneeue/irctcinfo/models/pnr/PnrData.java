@@ -1,12 +1,11 @@
 
-package com.zuneeue.irctcinfo.Models;
+package com.zuneeue.irctcinfo.models.pnr;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class PnrData {
 
@@ -325,8 +324,5 @@ public class PnrData {
     public void setPassengers(List<Passenger> passengers) {
         this.passengers = passengers;
     }
-
-
-
 
 }

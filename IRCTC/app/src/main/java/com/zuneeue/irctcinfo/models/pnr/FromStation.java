@@ -1,11 +1,10 @@
 
-package com.zuneeue.irctcinfo.Models;
+package com.zuneeue.irctcinfo.models.pnr;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-
-public class BoardingPoint {
+public class FromStation {
 
     @SerializedName("code")
     @Expose

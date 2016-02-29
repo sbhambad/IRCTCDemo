@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.zuneeue.irctcinfo.Models.PnrData;
 import com.zuneeue.irctcinfo.Utils.ConstantValue;
 
 import retrofit2.Call;

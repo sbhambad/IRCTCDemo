@@ -1,10 +1,10 @@
 
-package com.zuneeue.irctcinfo.Models;
+package com.zuneeue.irctcinfo.models.fare;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class ReservationUpto {
+public class Fare {
 
     @SerializedName("code")
     @Expose
@@ -12,6 +12,9 @@ public class ReservationUpto {
     @SerializedName("name")
     @Expose
     private String name;
+    @SerializedName("fare")
+    @Expose
+    private String fare;
 
     /**
      * 
@@ -47,6 +50,24 @@ public class ReservationUpto {
      */
     public void setName(String name) {
         this.name = name;
+    }
+
+    /**
+     * 
+     * @return
+     *     The fare
+     */
+    public String getFare() {
+        return fare;
+    }
+
+    /**
+     * 
+     * @param fare
+     *     The fare
+     */
+    public void setFare(String fare) {
+        this.fare = fare;
     }
 
 }
