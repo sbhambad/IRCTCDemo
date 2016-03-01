@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/train_bg"
     android:orientation="vertical"
-    tools:context="com.zuneeue.irctcinfo.TrainScheduleActivity">
+    tools:context="com.zuneeue.irctcinfo.PNRActivity">
 
     <include
         android:id="@+id/toolbar"
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:background="@color/white"
-        android:hint="Train name/number"
+        android:hint="PNR number"
         android:padding="10dp"
         android:textColorHint="@color/colorDivider"
         android:textSize="18sp" />
@@ -29,4 +29,5 @@
         android:background="@color/colorAccent"
         android:text="Search"
         android:textColor="@color/white" />
+
 </LinearLayout>

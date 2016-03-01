@@ -19,18 +19,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activities.FindTrains"
             android:label="@string/title_activity_find_trains"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.zuneeue.irctcinfo.MainActivity" />
         </activity>
-
-        <activity android:name=".TrainScheduleActivity"></activity>
-
+        <activity android:name=".TrainScheduleActivity" />
+        <activity android:name=".PNRActivity" />
+        <activity android:name=".FareEnquiryActivity"></activity>
     </application>
 
 </manifest>
