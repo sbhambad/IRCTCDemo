@@ -1,18 +1,13 @@
 package com.zuneeue.irctcinfo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.zuneeue.irctcinfo.Utils.ConstantValue;
-import com.zuneeue.irctcinfo.models.pnr.PnrData;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import com.zuneeue.irctcinfo.activities.FindTrains;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,31 +43,32 @@ public class MainActivity extends AppCompatActivity {
 
     public void getPnrFunc(String pnrNo) {
 
-        Call<PnrData> pnrData = AppController.railwayService.getPnr(pnrNo, ConstantValue.API_KEY);
-        pnrData.enqueue(new Callback<PnrData>() {
-            @Override
-            public void onResponse(Call<PnrData> call, Response<PnrData> response) {
-
-                Log.e("getTrainName", response.body().getTrainName());
-                Log.e("getTrainNum", response.body().getTrainNum());
-                Log.e("getTotalPassengers", response.body().getTotalPassengers() + "");
-                Log.e("getFromStation", response.body().getFromStation().getName());
-                Log.e("getFromStation", response.body().getToStation().getName());
-
-
-            }
-
-            @Override
-            public void onFailure(Call<PnrData> call, Throwable t) {
-
-            }
-        });
+//        Call<PnrData> pnrData = AppController.railwayService.getPnr(pnrNo, ConstantValue.API_KEY);
+//        pnrData.enqueue(new Callback<PnrData>() {
+//            @Override
+//            public void onResponse(Call<PnrData> call, Response<PnrData> response) {
+//
+//                Log.e("getTrainName", response.body().getTrainName());
+//                Log.e("getTrainNum", response.body().getTrainNum());
+//                Log.e("getTotalPassengers", response.body().getTotalPassengers() + "");
+//                Log.e("getFromStation", response.body().getFromStation().getName());
+//                Log.e("getFromStation", response.body().getToStation().getName());
+//
+//
+//            }
+//
+//            @Override
+//            public void onFailure(Call<PnrData> call, Throwable t) {
+//
+//            }
+//        });
     }
 
 
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.search_train:
+                startActivity(new Intent(this, FindTrains.class));
                 break;
             case R.id.fare_enquiry:
                 break;
