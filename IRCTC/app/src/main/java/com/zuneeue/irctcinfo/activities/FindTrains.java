@@ -1,15 +1,21 @@
 package com.zuneeue.irctcinfo.activities;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.DatePicker;
+import android.widget.EditText;
 
 import com.zuneeue.irctcinfo.R;
+import com.zuneeue.irctcinfo.Utils.DatePickerFragment;
 
-public class FindTrains extends AppCompatActivity {
+public class FindTrains extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
     private Toolbar mToolbar;
+    private EditText date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +26,17 @@ public class FindTrains extends AppCompatActivity {
         mToolbar.setTitle("Find Trains");
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        final DatePickerFragment newFrag = new DatePickerFragment();
+
+        date = (EditText) findViewById(R.id.date);
+
+        date.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                newFrag.show(getSupportFragmentManager(), "Date");
+            }
+        });
     }
 
 
@@ -38,5 +55,12 @@ public class FindTrains extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+        if (view.getTag().equals("Date")) {
+            date.setText(monthOfYear + "/" + dayOfMonth + "/" + year);
+        }
     }
 }
