@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.zuneeue.irctcinfo.Utils.ConstantValue;
 import com.zuneeue.irctcinfo.models.pnr.PnrData;
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.e("getTrainName", response.body().getTrainName());
                 Log.e("getTrainNum", response.body().getTrainNum());
-                Log.e("getTotalPassengers", response.body().getTotalPassengers()+"");
+                Log.e("getTotalPassengers", response.body().getTotalPassengers() + "");
                 Log.e("getFromStation", response.body().getFromStation().getName());
                 Log.e("getFromStation", response.body().getToStation().getName());
 
@@ -66,5 +67,23 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.search_train:
+                break;
+            case R.id.fare_enquiry:
+                break;
+            case R.id.live_train_status:
+                break;
+            case R.id.pnr_status:
+                break;
+            case R.id.seat_availability:
+                break;
+            case R.id.train_schedule:
+                break;
+        }
     }
 }
