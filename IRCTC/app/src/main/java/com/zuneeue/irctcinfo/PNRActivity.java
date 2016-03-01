@@ -5,16 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-public class TrainScheduleActivity extends AppCompatActivity {
-
+public class PNRActivity extends AppCompatActivity {
     Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_train_schedule);
+        setContentView(R.layout.activity_pnr);
+
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        mToolbar.setTitle("Train Schedule");
+        mToolbar.setTitle("PNR Status");
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

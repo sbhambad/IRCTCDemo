@@ -3,6 +3,7 @@ package com.zuneeue.irctcinfo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,11 +11,15 @@ import android.view.View;
 import com.zuneeue.irctcinfo.activities.FindTrains;
 
 public class MainActivity extends AppCompatActivity {
+    Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mToolbar.setTitle("IRCTC");
+        setSupportActionBar(mToolbar);
 
         getPnrFunc("8144989908");
     }
@@ -71,14 +76,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, FindTrains.class));
                 break;
             case R.id.fare_enquiry:
+                startActivity(new Intent(this, FareEnquiryActivity.class));
                 break;
             case R.id.live_train_status:
                 break;
             case R.id.pnr_status:
+                startActivity(new Intent(this, PNRActivity.class));
                 break;
             case R.id.seat_availability:
                 break;
             case R.id.train_schedule:
+                startActivity(new Intent(this, TrainScheduleActivity.class));
                 break;
         }
     }
