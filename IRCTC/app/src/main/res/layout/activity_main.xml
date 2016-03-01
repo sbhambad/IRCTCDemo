@@ -23,6 +23,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
+                android:background="@drawable/icon_bg"
                 android:gravity="center"
                 android:onClick="onClick"
                 android:orientation="vertical">
@@ -47,7 +48,9 @@
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
+                android:background="@drawable/icon_bg"
                 android:gravity="center"
+
                 android:onClick="onClick"
                 android:orientation="vertical">
 
@@ -75,6 +78,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
+                android:background="@drawable/icon_bg"
+
                 android:gravity="center"
                 android:onClick="onClick"
                 android:orientation="vertical">
@@ -100,6 +105,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
+
+                android:background="@drawable/icon_bg"
                 android:gravity="center"
                 android:onClick="onClick"
                 android:orientation="vertical">
@@ -128,6 +135,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
+                android:background="@drawable/icon_bg"
+
                 android:gravity="center"
                 android:onClick="onClick"
                 android:orientation="vertical">
@@ -153,6 +162,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
+                android:background="@drawable/icon_bg"
+
                 android:gravity="center"
                 android:onClick="onClick"
                 android:orientation="vertical">
