@@ -1,12 +1,13 @@
 package com.zuneeue.irctcinfo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.zuneeue.irctcinfo.Utils.ConstantValue;
+import com.zuneeue.irctcinfo.models.pnr.PnrData;
 
 import retrofit2.Call;
 import retrofit2.Callback;
