@@ -29,7 +29,9 @@
         </activity>
         <activity android:name=".TrainScheduleActivity" />
         <activity android:name=".PNRActivity" />
-        <activity android:name=".FareEnquiryActivity"></activity>
+        <activity android:name=".FareEnquiryActivity" />
+        <activity android:name=".LiveTrainStatusActivity" />
+        <activity android:name=".SeatAvailabilityActivity"></activity>
     </application>
 
 </manifest>
