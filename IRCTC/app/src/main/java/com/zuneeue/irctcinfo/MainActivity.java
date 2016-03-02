@@ -79,11 +79,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, FareEnquiryActivity.class));
                 break;
             case R.id.live_train_status:
+                startActivity(new Intent(this, LiveTrainStatusActivity.class));
                 break;
             case R.id.pnr_status:
                 startActivity(new Intent(this, PNRActivity.class));
                 break;
             case R.id.seat_availability:
+                startActivity(new Intent(this, SeatAvailabilityActivity.class));
                 break;
             case R.id.train_schedule:
                 startActivity(new Intent(this, TrainScheduleActivity.class));
