@@ -1,12 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/train_bg"
+    android:orientation="vertical"
     tools:context="com.zuneeue.irctcinfo.SeatAvailabilityActivity">
 
-</RelativeLayout>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/white"
+                android:hint="Source"
+                android:padding="10dp"
+                android:textColorHint="@color/colorDivider"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/white"
+                android:hint="Destination"
+                android:padding="10dp"
+                android:textColorHint="@color/colorDivider"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/train_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/white"
+                android:hint="Train Number(Optional)"
+                android:padding="10dp"
+                android:textColorHint="@color/colorDivider"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/white"
+                android:hint="Class"
+                android:padding="10dp"
+                android:textColorHint="@color/colorDivider"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/quota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/white"
+                android:hint="Quota"
+                android:padding="10dp"
+                android:textColorHint="@color/colorDivider"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/colorAccent"
+                android:text="Search"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow" />
+    </LinearLayout>
+
+
+</LinearLayout>
