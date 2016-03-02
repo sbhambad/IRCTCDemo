@@ -19,8 +19,8 @@
 
             <LinearLayout
                 android:id="@+id/search_train"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/icon_bg"
@@ -36,6 +36,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="Search Trains"
                     android:textColor="@android:color/white"
@@ -44,8 +45,8 @@
 
             <LinearLayout
                 android:id="@+id/train_schedule"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/icon_bg"
@@ -62,9 +63,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="Train Schedule"
-
                     android:textColor="@android:color/white"
                     android:textSize="15dp" />
             </LinearLayout>
@@ -74,8 +75,8 @@
 
             <LinearLayout
                 android:id="@+id/fare_enquiry"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/icon_bg"
@@ -92,17 +93,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="Fare Enquiry"
-
                     android:textColor="@android:color/white"
                     android:textSize="15dp" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/pnr_status"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
 
@@ -119,9 +120,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="PNR Status"
-
                     android:textColor="@android:color/white"
                     android:textSize="15dp" />
             </LinearLayout>
@@ -131,8 +132,8 @@
 
             <LinearLayout
                 android:id="@+id/seat_availability"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/icon_bg"
@@ -149,17 +150,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="Seat Availability"
-
                     android:textColor="@android:color/white"
                     android:textSize="15dp" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/live_train_status"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/icon_bg"
@@ -176,6 +177,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="Live Train Status"
                     android:textColor="@android:color/white"

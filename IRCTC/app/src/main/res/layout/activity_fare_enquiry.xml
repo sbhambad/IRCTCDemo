@@ -1,13 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/train_bg"
     android:layout_height="match_parent"
+    android:background="@drawable/train_bg"
+    android:orientation="vertical"
     tools:context="com.zuneeue.irctcinfo.FareEnquiryActivity">
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/trainNo"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:hint="Train Number"
+        android:padding="10dp"
+        android:textColorHint="@color/colorDivider"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+
+        <EditText
+            android:id="@+id/source"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@color/white"
+            android:hint="Source"
+            android:padding="10dp"
+            android:textColorHint="@color/colorDivider"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/source"
+            android:padding="5dp"
+            android:src="@drawable/arrow" />
+
+
+        <EditText
+            android:id="@+id/dest"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/source"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:hint="Destination"
+            android:padding="10dp"
+            android:textColorHint="@color/colorDivider"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/seat"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:editable="false"
+        android:hint="Seat"
+        android:padding="10dp"
+        android:textColorHint="@color/colorDivider"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dest"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:editable="false"
+        android:hint="Date"
+        android:padding="10dp"
+        android:textColorHint="@color/colorDivider"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Age"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:editable="false"
+        android:hint="Age"
+        android:padding="10dp"
+        android:textColorHint="@color/colorDivider"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/quota"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:editable="false"
+        android:hint="Quota"
+        android:padding="10dp"
+        android:textColorHint="@color/colorDivider"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"
+        android:text="Find"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
