@@ -31,7 +31,8 @@
         <activity android:name=".PNRActivity" />
         <activity android:name=".FareEnquiryActivity" />
         <activity android:name=".LiveTrainStatusActivity" />
-        <activity android:name=".SeatAvailabilityActivity"></activity>
+        <activity android:name=".SeatAvailabilityActivity" />
+        <activity android:name=".activities.TrainScheduleList"></activity>
     </application>
 
 </manifest>

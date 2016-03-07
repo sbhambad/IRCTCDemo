@@ -25,7 +25,7 @@ public interface RailwayService {
     @GET("live/train/{trainNumber}/doj/{date}/apikey/{apikey}/")
     Call<LiveStatusData> getLiveStatus(@Path("trainNumber") String trainNumber, @Path("date") String date, @Path("apikey") String apikey);
 
-    @GET("route/train/<trainNumber>/apikey/<apiKey>/")
+    @GET("route/train/{trainNumber}/apikey/{apiKey}/")
     Call<RouteData> getRoute(@Path("trainNumber") String trainNumber, @Path("apiKey") String apiKey);
 
     @GET("check_seat/train/{trainNumber}/source/{sourceCode}/dest/{destCode}/date/{doj}/class/{classCode}/quota/{quotaCode}/apikey/{apiKey}/")

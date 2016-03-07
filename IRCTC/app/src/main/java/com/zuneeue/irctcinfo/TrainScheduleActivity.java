@@ -1,13 +1,21 @@
 package com.zuneeue.irctcinfo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+
+import com.zuneeue.irctcinfo.activities.TrainScheduleList;
 
 public class TrainScheduleActivity extends AppCompatActivity {
 
     Toolbar mToolbar;
+    Button search;
+    EditText train;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,17 +26,27 @@ public class TrainScheduleActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        initializeViews();
+
+    }
+
+    private void initializeViews() {
+        search = (Button) findViewById(R.id.button_search);
+        train = (EditText) findViewById(R.id.train);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TrainScheduleActivity.this, TrainScheduleList.class);
+                intent.putExtra("train", train.getText().toString());
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        //noinspection SimplifiableIfStatement
         if (id == android.R.id.home) {
             finish();
             return true;

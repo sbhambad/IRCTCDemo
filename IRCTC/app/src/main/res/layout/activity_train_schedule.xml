@@ -12,17 +12,19 @@
         layout="@layout/toolbar" />
 
     <EditText
-        android:id="@+id/source"
+        android:id="@+id/train"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:background="@color/white"
-        android:hint="Train name/number"
+        android:hint="Train number"
+        android:inputType="number"
         android:padding="10dp"
         android:textColorHint="@color/colorDivider"
         android:textSize="18sp" />
 
     <Button
+        android:id="@+id/button_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
